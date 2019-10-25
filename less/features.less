@@ -1,6 +1,5 @@
 .introduction {
-  display: flex;
-  flex-direction: column;
+  .flex-column();
   align-items: center;
   @media @mobile {
     display: none;
@@ -27,14 +26,12 @@
 .features {
   width: 80%;
   margin: 10px auto;
-  display: flex;
-  flex-direction: row;
+  .flex-row();
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .first {
-  display: flex;
-  flex-direction: row;
+  .flex-row();
   justify-content: space-between;
   margin: 1% 0;
 }
@@ -58,8 +55,7 @@
   }
 }
 .second {
-  display: flex;
-  flex-direction: row;
+  .flex-row();
   justify-content: space-between;
   margin: 1% 0;
 }
@@ -103,8 +99,7 @@
   margin: 0 auto;
 }
 .team-cards {
-  display: flex;
-  flex-direction: row;
+  .flex-row();
   justify-content: space-between;
   flex-wrap: row wrap;
 }
