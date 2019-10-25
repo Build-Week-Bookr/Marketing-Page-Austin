@@ -1,0 +1,187 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@font-face {
+  font-family: "Adam Pro";
+  src: url("/assets/fonts/ADAM.CG\ PRO.otf");
+}
+@font-face {
+  font-family: "Junction";
+  src: url("/assets/fonts/Junction-regular.otf");
+}
+@font-face {
+  font-family: "Airbag";
+  src: url("/assets/fonts/AirbagFree-Regular.otf");
+}
+html {
+  background-color: #fff;
+}
+.wrapper {
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+}
+header h1 {
+  font-family: "Adam Pro";
+  font-size: 3.3rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Adam Pro";
+}
+nav a {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 10px;
+}
+.prompt {
+  background-color: #4accce;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introduction h1 {
+  font-family: "Fira Mono";
+  font-size: 4rem;
+}
+.introduction .centred {
+  color: #2e4ff2;
+  text-transform: uppercase;
+  font-family: "Adam Pro";
+}
+.image img {
+  width: 80%;
+  margin: 0 auto;
+  border: 10px solid grey;
+}
+.features {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+.first div {
+  padding: 20px;
+  width: 48%;
+  background-color: lightskyblue;
+  font-size: 14px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+.first img {
+  width: 48%;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+.second div {
+  padding: 20px;
+  width: 48%;
+  background-color: lightskyblue;
+  font-size: 14px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+.second img {
+  width: 48%;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+}
+.reviews {
+  display: flex;
+}
+.reviews div {
+  width: 30%;
+  text-align: justify;
+  margin: 1% 1% 1% 0;
+  padding: 1% 1% 1% 0;
+}
+footer {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Junction";
+  font-size: 1.2rem;
+  text-align: center;
+}
