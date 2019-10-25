@@ -85,6 +85,22 @@ header {
   margin: 0 auto;
   padding: 5px;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    min-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+  }
+  header h1 {
+    margin-bottom: 12px;
+  }
+  header a {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+}
 header h1 {
   font-family: "Adam Pro";
   font-size: 3.3rem;
@@ -94,6 +110,11 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   font-family: "Adam Pro";
+}
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
 }
 nav a {
   padding: 5px;
@@ -109,6 +130,11 @@ nav a {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .introduction {
+    display: none;
+  }
+}
 .introduction h1 {
   font-family: "Fira Mono";
   font-size: 4rem;
@@ -122,6 +148,12 @@ nav a {
   width: 80%;
   margin: 0 auto;
   border: 10px solid grey;
+}
+@media (max-width: 500px) {
+  .image img {
+    width: 80%;
+    height: 250px;
+  }
 }
 .features {
   width: 80%;
@@ -145,10 +177,20 @@ nav a {
   border: 0.5px solid grey;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .first div {
+    width: 100%;
+  }
+}
 .first img {
   width: 48%;
   border: 0.5px solid grey;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .first img {
+    display: none;
+  }
 }
 .second {
   display: flex;
@@ -164,10 +206,20 @@ nav a {
   border: 0.5px solid grey;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .second div {
+    width: 100%;
+  }
+}
 .second img {
   width: 48%;
   border: 0.5px solid grey;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .second img {
+    display: none;
+  }
 }
 .reviews {
   display: flex;

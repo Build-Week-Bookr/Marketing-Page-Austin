@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media @mobile {
+    display: none;
+  }
 }
 .introduction h1 {
   font-family: "Fira Mono";
@@ -16,6 +19,10 @@
   width: 80%;
   margin: 0 auto;
   border: 10px solid grey;
+  @media @mobile {
+    width: 80%;
+    height: 250px;
+  }
 }
 .features {
   width: 80%;
@@ -38,11 +45,17 @@
   font-size: 14px;
   border: 0.5px solid grey;
   border-radius: 5px;
+  @media @mobile {
+    width: 100%;
+  }
 }
 .first img {
   width: 48%;
   border: 0.5px solid grey;
   border-radius: 5px;
+  @media @mobile {
+    display: none;
+  }
 }
 .second {
   display: flex;
@@ -57,11 +70,17 @@
   font-size: 14px;
   border: 0.5px solid grey;
   border-radius: 5px;
+  @media @mobile {
+    width: 100%;
+  }
 }
 .second img {
   width: 48%;
   border: 0.5px solid grey;
   border-radius: 5px;
+  @media @mobile {
+    display: none;
+  }
 }
 .reviews {
   display: flex;
