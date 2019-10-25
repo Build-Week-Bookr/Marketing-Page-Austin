@@ -84,12 +84,37 @@
 }
 .reviews {
   display: flex;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .reviews div {
   width: 30%;
   text-align: justify;
   margin: 1% 1% 1% 0;
   padding: 1% 1% 1% 0;
+  @media @mobile {
+    width: 100%;
+  }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.team-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+}
+.card {
+  width: 50%;
+  border: 2px solid grey;
+  margin: 2%;
+}
+.card img:hover {
+  transform: scale(1.2);
 }
 footer {
   width: 80%;

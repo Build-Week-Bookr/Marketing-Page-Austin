@@ -93,13 +93,6 @@ header {
     align-items: center;
     align-content: space-between;
   }
-  header h1 {
-    margin-bottom: 12px;
-  }
-  header a {
-    font-size: 2rem;
-    padding: 0 20px;
-  }
 }
 header h1 {
   font-family: "Adam Pro";
@@ -111,16 +104,16 @@ nav {
   justify-content: space-evenly;
   font-family: "Adam Pro";
 }
-@media (max-width: 500px) {
-  nav {
-    display: none;
-  }
-}
 nav a {
   padding: 5px;
   text-decoration: none;
   font-size: 1.4rem;
   margin: 10px;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 0.6rem;
+  }
 }
 .prompt {
   background-color: #4accce;
@@ -224,11 +217,40 @@ nav a {
 .reviews {
   display: flex;
 }
+@media (max-width: 500px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .reviews div {
   width: 30%;
   text-align: justify;
   margin: 1% 1% 1% 0;
   padding: 1% 1% 1% 0;
+}
+@media (max-width: 500px) {
+  .reviews div {
+    width: 100%;
+  }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.team-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: row wrap;
+}
+.card {
+  width: 50%;
+  border: 2px solid grey;
+  margin: 2%;
+}
+.card img:hover {
+  transform: scale(1.2);
 }
 footer {
   width: 80%;
